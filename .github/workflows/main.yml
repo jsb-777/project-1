@@ -1,0 +1,9 @@
+name: My workflow
+on: [push, pull_request]branch_protection_rule:
+
+jobs: 
+  build:  
+    runs-on: ubunyu-latest
+    steps: 
+    uses: actions/checkout@v3
+    run: echo "HELLO 한글날"
